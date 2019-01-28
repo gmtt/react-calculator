@@ -22,7 +22,7 @@ export const calculator = (state = {
             } else {
                 equation.push(Number(state.cur));
             }
-            let res = equationCalc(equation);
+            let res = equationCalc(equation.slice(0));
             equation.push('=', res);
             let history = state.history.slice(0);
             history.push(equation);

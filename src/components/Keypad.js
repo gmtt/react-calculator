@@ -117,7 +117,7 @@ class Keypad extends React.Component {
             rows.push(<TableRow key={i}>{cols}</TableRow>)
         }
         return (
-            <Table fullWidth={true}>
+            <Table>
                 <TableBody>{rows}</TableBody>
             </Table>
         );
